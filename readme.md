@@ -1,4 +1,4 @@
-# Tech-Alchemy-Task
+# TechAlchemy-Task
 **Task-1**
 **Answer** : Here, we have limited range of memory, whereas data given is 10x bigger than operational available memory. so here what I think is data divided into temporary files of equal to the size of the RAM and then operate data through 'external sorting' which uses merging technique. 
 
@@ -30,8 +30,7 @@ Now, after installing dependencies create one **".env"** file from **".env.test"
 
 Now run the command **"npm start"** or go to in **"/src"** directory and then fire command **"node index.js"** (both working..)
 
-**Postman documentation file** : Test-Tech-alchemy.postman_collection.json
-Now import the postman-collection file and test APIs.
+**Postman documentation link** : https://www.getpostman.com/collections/2301ab99e2b4df8cf8ea
 
 Some prerequisite for successful run this project:
 
