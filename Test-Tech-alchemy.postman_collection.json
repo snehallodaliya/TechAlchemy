@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "5959a2cd-d6c0-478c-bd1d-d4dd2ba36862",
+		"name": "Test-Tech-alchemy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8683718"
+	},
+	"item": [
+		{
+			"name": "RegisterUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"SnehalLodaliya\",\n    \"email\": \"snehallodaliya@gmail.com\",\n    \"password\": \"Snehal@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"register"
+					]
+				},
+				"description": "This request is for create new user(Register process)"
+			},
+			"response": []
+		},
+		{
+			"name": "LoginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"email\": \"snehallodaliya@gmail.com\",\n    \"password\": \"Snehal@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"auth",
+						"login"
+					]
+				},
+				"description": "This request is for login to User"
+			},
+			"response": []
+		},
+		{
+			"name": "News Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTMzNjU0NzAsImV4cCI6MTY1MzQ1MTg3MCwiZGF0YSI6eyJ1c2VySWQiOiI2MjhjNWE2ZjliNzM3MjNjZjA4YjJjNjEifX0.tk-QLYcHGJ2XbCuCcs63J3NzPCjUYDLAitzAkHGcmEQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"search\":\"war\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/news",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"news"
+					]
+				},
+				"description": "Retrive data of news\n\nPass the authorization in headers as given in this request"
+			},
+			"response": []
+		},
+		{
+			"name": "Weather Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/weather",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"weather"
+					]
+				},
+				"description": "Retrive data of weather"
+			},
+			"response": []
+		}
+	]
+}
